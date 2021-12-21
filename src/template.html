@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive - Weather App</title>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="../favicon.jpg" />
+  </head>
+  <body>
+    <div class="modal-choose-location">
+      <form>
+        <p class="error"></p>
+        <input
+          type="text"
+          placeholder="choose location"
+          class="modal-choose-location_input"
+        />
+        <div>
+          <button type="submit" class="btn btn-search">Search</button>
+          <button class="btn btn-back">Back</button>
+        </div>
+      </form>
+    </div>
+    <div class="content-centar">
+      <header>
+        <div class="header__location">
+          <h1>-</h1>
+          <img
+            src="../image/locationIcon.png"
+            alt="location-icon"
+            id="location-icon"
+          />
+        </div>
+        <div class="header__date">
+          <h4>Monday 29 August</h4>
+        </div>
+      </header>
+      <main>
+        <section class="main__todays-weather-info">
+          <div class="main__todays-weather-info_current">
+            <img
+              src="../image/sun.svg"
+              class="current-weather-icon"
+              alt="current-weather-icon"
+            />
+            <div class="main__todays-weather-info_current-info">
+              <h2>-</h2>
+              <p>Mostly sunny</p>
+            </div>
+          </div>
+          <div class="main__todays-weather-info_stats">
+            <div class="main__todays-weather-info_stats-high">
+              <h3>-</h3>
+              <h4>High</h4>
+            </div>
+            <div class="main__todays-weather-info_stats-wind">
+              <h3>-</h3>
+              <h4>Wind</h4>
+            </div>
+            <div class="main__todays-weather-info_stats-sunrise">
+              <h3>-</h3>
+              <h4>Sunrise</h4>
+            </div>
+            <div class="main__todays-weather-info_stats-low">
+              <h3>-</h3>
+              <h4>Low</h4>
+            </div>
+            <div class="main__todays-weather-info_stats-rain">
+              <h3>-</h3>
+              <h4>Rain</h4>
+            </div>
+            <div class="main__todays-weather-info_stats-sunset">
+              <h3>-</h3>
+              <h4>Sunset</h4>
+            </div>
+          </div>
+        </section>
+        <section class="main__todays-weather-by-time">
+          <h2>Todays weather (next 7 hours)</h2>
+          <div class="main__todays-weather-by-time_items"></div>
+        </section>
+        <section class="main__future-weather">
+          <h2>Next 3 days</h2>
+          <div class="main__future-weather-by-day_container"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
